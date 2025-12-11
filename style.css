@@ -503,7 +503,7 @@ footer {
     }
 
     .tagline {
-        font-size: 0.75rem;
+        font-size: 0.80rem;
         text-align: center;
     }
 
@@ -614,3 +614,4 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 }
+
