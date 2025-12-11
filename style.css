@@ -41,7 +41,7 @@ a:hover, a:active {
 .tagline {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #888;
 }
 
@@ -614,6 +614,7 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 }
+
 
 
 
