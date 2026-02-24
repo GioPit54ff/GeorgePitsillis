@@ -360,7 +360,7 @@ header {
     color: #408D3C; /* Σκούρο πράσινο */
 }
 footer {
-    background-color: #888888;
+    background-color: #408D3C;
     margin: right -40px ;
     margin-top: -2px;
     padding: 20px 5px 20px 5px;
@@ -614,6 +614,7 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 }
+
 
 
 
