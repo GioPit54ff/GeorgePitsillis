@@ -361,7 +361,17 @@ header {
     }
 }
 
+@media (max-width: 1024px) {
+    header a {
+        font-size: 1rem;
+    }
+}
 
+@media (max-width: 600px) {
+    header a {
+        font-size: 0.9rem;
+    }
+}
 
 .branding {
     margin-left: 15px;
