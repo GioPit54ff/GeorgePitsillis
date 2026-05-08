@@ -68,6 +68,20 @@ nav ul li a:hover {
     color: white;
     border-radius: 4px;
 }
+header a {
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #408D3C;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    color: #888;
+    transform: scale(1.1);
+}
 
 
 /* Banner */
