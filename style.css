@@ -83,7 +83,7 @@ header a {
     margin-left: auto;
     font-family: 'Roboto', sans-serif;
     color: #408D3C;
-    font-size: clamp(0.85rem, 1.2vw, 1.1rem);
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
     font-weight: 500;
     display: inline-block;
     transition: all 0.3s ease;
@@ -91,7 +91,7 @@ header a {
 
 header a:hover {
     color: #888;
-    transform: scale(1.08);
+  
 }
 
 /* =========================
