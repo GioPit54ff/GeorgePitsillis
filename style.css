@@ -1,129 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>George Pitsillis</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>George Pitsillis</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="icon" href="Logo.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="icon" href="Logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-
     <div class="logo-branding">
-        <img src="Logo.svg" class="logo" />
+        <img src="Logo.svg" alt="Logo" class="logo" />
 
         <div class="branding">
             <h1>George Pitsillis</h1>
-            <p class="tagline">Multimedia & Graphic Designer</p>
+            <p class="tagline">Graphic Design & Multimedia</p>
         </div>
     </div>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="GiorgosPitsillisPortfolio.pdf" class="project-link" target="_blank">
-                    Projects
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.behance.net/giorgospit" target="_blank" rel="noopener noreferrer">
-                    Behance
-                </a>
-            </li>
-        </ul>
-    </nav>
-
+    <a href="GiorgosPitsillisPortfolio.pdf" class="project-link" target="_blank">
+        Projects
+    </a>
 </header>
 
-<!-- SLIDER -->
 <section class="banner-slider">
 
-    <div class="slide">
-        <img src="GP - Φωτογραφία2.jpg" />
-        <div class="caption">Graphic Design</div>
+    <div class="slide active">
+        <img src="GP - Φωτογραφία2.jpg" alt="Category 1">
     </div>
 
     <div class="slide">
-        <img src="Scene18.png" />
-        <div class="caption">Web Design & Development</div>
+        <img src="1.png" alt="Category 2">
     </div>
 
     <div class="slide">
-        <img src="Marcel Caram - Φωτογραφία55.png" />
-        <div class="caption">3D Modeling & Animation</div>
-    </div>
-
-    <div class="slide">
-        <img src="Screenshot (10).png" />
-        <div class="caption">Photography & Video</div>
+        <img src="Scene18.png" alt="Category 3">
     </div>
 
 </section>
 
-<!-- ABOUT -->
-<section class="about-section">
-
-    <h2>About</h2>
-
-    <p>
-        George Pitsillis is a Multimedia & Graphic Designer based in Limassol, known for combining creativity with problem-solving to craft clear, engaging visual experiences. His work focuses on storytelling through design, always aiming to communicate ideas effectively and memorably.
-    </p>
-
-</section>
-
-<!-- CONTACT LINKS -->
-<section class="contact-links">
-
-    <a href="mailto:giopit54ff@gmail.com">Email</a>
-
-    <a href="tel:+35797655441">+357 97 655441</a>
-
-    <a href="https://www.linkedin.com/in/giorgos-pitsillis-b92297380" target="_blank">
-        LinkedIn
-    </a>
-
-    <a href="https://www.behance.net/giorgospit" target="_blank">
-        Behance
-    </a>
-
-</section>
-
-<!-- FOOTER -->
-<footer>
-
-    <div class="brandingf">
-        <h1>George Pitsillis</h1>
-    </div>
-
-    <p>© 2025 George Pitsillis. All rights reserved.</p>
-
-</footer>
-
-<!-- SLIDER SCRIPT -->
 <script>
-let currentIndex = 0;
-const slides = document.querySelectorAll('.slide');
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
 
-function showSlide(index){
-    slides.forEach(s => s.classList.remove('active'));
+  function showSlide(index) {
+    slides.forEach((slide) => slide.classList.remove('active'));
     slides[index].classList.add('active');
-}
+  }
 
-function nextSlide(){
-    currentIndex = (currentIndex + 1) % slides.length;
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
-}
+  }
 
-showSlide(currentIndex);
-setInterval(nextSlide, 4000);
+  setInterval(nextSlide, 4000);
 </script>
 
 </body>
