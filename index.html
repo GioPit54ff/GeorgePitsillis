@@ -15,55 +15,75 @@
 <header>
     <div class="logo-branding">
         <img src="Logo.svg" alt="Logo" class="logo" />
+
         <div class="branding">
             <h1>George Pitsillis</h1>
-            <p class="tagline">Graphic Design & Multimedia</p>
+            <p class="tagline">Multimedia & Graphic Designer</p>
         </div>
     </div>
-    <a href="GiorgosPitsillisPortfolio.pdf" class="project-link" target="_blank">
-        Projects
-    </a>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.behance.net/giorgospit" target="_blank">
+                    Behance
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
+<!-- SLIDER -->
 <section class="banner-slider">
 
-  <div class="slide active">
-      <img src="GP - Φωτογραφία2.jpg" alt="slide 1">
-  </div>
+    <div class="slide active">
+        <img src="GP - Φωτογραφία2.jpg" alt="">
+        <div class="caption">Graphic Design</div>
+    </div>
 
-  <div class="slide">
-      <img src="1.png" alt="slide 2">
-  </div>
+    <div class="slide">
+        <img src="Scene18.png" alt="">
+        <div class="caption">Web Design & Development</div>
+    </div>
 
-  <div class="slide">
-      <img src="Scene18.png" alt="slide 3">
-  </div>
+    <div class="slide">
+        <img src="Marcel Caram - Φωτογραφία55.png" alt="">
+        <div class="caption">3D Modeling & Animation</div>
+    </div>
+
+    <div class="slide">
+        <img src="Screenshot (10).png" alt="">
+        <div class="caption">Photography & Video</div>
+    </div>
 
 </section>
 
 <script>
-  let currentIndex = 0;
-  const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length;
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
 
-  function showSlide(index) {
-    slides.forEach((slide) => slide.classList.remove('active'));
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
     slides[index].classList.add('active');
-  }
+}
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
-  }
+}
 
-  setInterval(nextSlide, 4000);
+showSlide(0);
+setInterval(nextSlide, 4000);
 </script>
 
 <footer>
     <div class="footer-links">
+
         <div class="about-section">
             <h2>About</h2>
-            <p>George Pitsillis is a Multimedia & Graphic Designer based in Limassol, creating custom graphic design solutions for Print and Digital platforms. You can contact me by Mobile or Email.</p>
+            <p>
+                Multimedia & Graphic Designer based in Limassol.
+            </p>
         </div>
 
         <div class="brandingf">
@@ -72,45 +92,17 @@
 
         <div class="bottom-section">
             <div class="contact-links">
-                <a href="mailto:giopit54ff@gmail.com" class="gmail-link">giopit54ff@gmail.com</a>
-                <a href="tel:+35797655441" class="phone-link">+357 97 655441</a>
-                
-                <a href="https://www.behance.net/georgepitsillis" target="_blank">Behance</a>
-                <a href="https://www.instagram.com/george.pitsillis/" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/giorgos-pitsillis-b92297380" target="_blank">LinkedIn</a>
+                <a href="mailto:giopit54ff@gmail.com">Email</a>
+                <a href="tel:+35797655441">Phone</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://www.behance.net" target="_blank">Behance</a>
             </div>
-            <p class="fCopy">&copy; 2025 George Pitsillis. All rights reserved.</p>
+
+            <p>&copy; 2025 George Pitsillis</p>
         </div>
+
     </div>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
