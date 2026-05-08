@@ -4,92 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>George Pitsillis</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="icon" href="Logo.svg" type="image/svg+xml" />
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
 <header>
     <div class="logo-branding">
-        
-            <img src="Logo.svg" alt="Logo" class="logo" />
-        
+        <img src="Logo.svg" alt="Logo" class="logo" />
         <div class="branding">
             <h1>George Pitsillis</h1>
-            <p class="tagline">Multimedia & Graphic Designer</p>
-             
-              
-           
-              
-        
+            <p class="tagline">Graphic Design & Multimedia</p>
         </div>
-        
     </div>
-
-    <nav>
-      
-        <ul id="nav-links">
-            <li><a href="https://www.behance.net/giorgospit" target="_blank" rel="noopener noreferrer">Behance</a></li>
-        </ul>
-    </nav>
 </header>
 
 <section class="banner-slider">
 
+  <div class="slide active">
+      <img src="GP - Φωτογραφία2.jpg" alt="slide 1">
+  </div>
+
   <div class="slide">
-   
-  <img src="GP - Φωτογραφία2.jpg" alt="Murals Project">
-
-    <div class="caption">Graphic Design</div>
+      <img src="1.png" alt="slide 2">
   </div>
 
-   <div class="slide">
-    
-  <img src="Scene18.png" alt="Graphic Identityt">
-
-    <div class="caption">Web Design & Development</div>
-  </div>
-
-  
   <div class="slide">
-    
-  <img src="Marcel Caram - Φωτογραφία55.png" alt="Murals Project">
-
-    <div class="caption">3D Modeling & Animation</div>
-  </div>
- 
-      <div class="slide">
-  
-  <img src="Screenshot (10).png" alt="Murals Project">
-
-    <div class="caption">Photography & Video</div>
+      <img src="Scene18.png" alt="slide 3">
   </div>
 
-  
-  
-
-  
-
-   
- 
-   
-
- 
 </section>
 
-
- <script>
+<script>
   let currentIndex = 0;
   const slides = document.querySelectorAll('.slide');
   const totalSlides = slides.length;
 
   function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-    });
+    slides.forEach((slide) => slide.classList.remove('active'));
     slides[index].classList.add('active');
   }
 
@@ -98,25 +53,14 @@
     showSlide(currentIndex);
   }
 
-  showSlide(currentIndex);
-  
-  setInterval(nextSlide, 4000); // αλλαγή κάθε 4 δευτερόλεπτα
-
-  
+  setInterval(nextSlide, 4000);
 </script>
-
-
-
-
-
-
-
 
 <footer>
     <div class="footer-links">
         <div class="about-section">
             <h2>About</h2>
-            <p>George Pitsillis is a Multimedia & Graphic Designer based in Limassol, known for combining creativity with problem-solving to craft clear, engaging visual experiences. His work focuses on storytelling through design, always aiming to communicate ideas effectively and memorably.</p>
+            <p>George Pitsillis is a Multimedia & Graphic Designer based in Limassol, creating custom graphic design solutions for Print and Digital platforms. You can contact me by Mobile or Email.</p>
         </div>
 
         <div class="brandingf">
@@ -127,8 +71,10 @@
             <div class="contact-links">
                 <a href="mailto:giopit54ff@gmail.com" class="gmail-link">giopit54ff@gmail.com</a>
                 <a href="tel:+35797655441" class="phone-link">+357 97 655441</a>
-                <a href="https://www.linkedin.com/in/giorgos-pitsillis-b92297380" target="_blank" class="linkedin-btn">LinkedIn</a>
-                <a href="https://www.behance.net/giorgospit" target="_blank" rel="noopener noreferrer">Behance</a>
+                <a href="GiorgosPitsillisPortfolio.pdf" target="_blank">Projects</a>
+                <a href="https://www.behance.net/georgepitsillis" target="_blank">Behance</a>
+                <a href="https://www.instagram.com/george.pitsillis/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/giorgos-pitsillis-b92297380" target="_blank">LinkedIn</a>
             </div>
             <p class="fCopy">&copy; 2025 George Pitsillis. All rights reserved.</p>
         </div>
@@ -138,3 +84,30 @@
 </body>
 </html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  mporis na m valeis to project link sto header termadeksia me prasino xwrma gramatoseira opws roboto kai hover to grizo toy multimedia design sto header?
