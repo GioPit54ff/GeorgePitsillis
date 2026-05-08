@@ -4,84 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>George Pitsillis</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="icon" href="Logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+
 
 <header>
     <div class="logo-branding">
-        <img src="Logo.svg" alt="Logo" class="logo" />
-
+        
+            <img src="Logo.svg" alt="Logo" class="logo" />
+        
         <div class="branding">
             <h1>George Pitsillis</h1>
-            <p class="tagline">Multimedia & Graphic Design</p>
+            <p class="tagline">Multimedia & Graphic Designer</p>
+             
+              
+           
+              
+        
         </div>
+        
     </div>
 
     <nav>
-        <ul>
-            <li>
-                <a href="GiorgosPitsilisPortfolio" target="_blank">
-                    Projects
-                </a>
-            </li>
+      
+        <ul id="nav-links">
+            <li><a href="https://www.behance.net/giorgospit" target="_blank" rel="noopener noreferrer">Behance</a></li>
         </ul>
     </nav>
 </header>
 
-<!-- SLIDER -->
 <section class="banner-slider">
 
-    <div class="slide active">
-        <img src="GP - Φωτογραφία2.jpg" alt="">
-       
-    </div>
+  <div class="slide">
+   
+  <img src="GP - Φωτογραφία2.jpg" alt="Murals Project">
 
-    <div class="slide">
-        <img src="1.png" alt="">
-       
-    </div>
+    <div class="caption">Graphic Design</div>
+  </div>
 
-    <div class="slide">
-        <img src="Scene19.png" alt="">
-       
-    </div>
+   <div class="slide">
+    
+  <img src="Scene18.png" alt="Graphic Identityt">
+
+    <div class="caption">Web Design & Development</div>
+  </div>
+
+  
+  <div class="slide">
+    
+  <img src="Marcel Caram - Φωτογραφία55.png" alt="Murals Project">
+
+    <div class="caption">3D Modeling & Animation</div>
+  </div>
+ 
+      <div class="slide">
+  
+  <img src="Screenshot (10).png" alt="Murals Project">
+
+    <div class="caption">Photography & Video</div>
+  </div>
+
+  
+  
+
+  
 
    
+ 
+   
 
+ 
 </section>
 
-<script>
-let currentIndex = 0;
-const slides = document.querySelectorAll('.slide');
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
+ <script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+    });
     slides[index].classList.add('active');
-}
+  }
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
-}
+  }
 
-showSlide(0);
-setInterval(nextSlide, 4000);
+  showSlide(currentIndex);
+  
+  setInterval(nextSlide, 4000); // αλλαγή κάθε 4 δευτερόλεπτα
+
+  
 </script>
+
+
+
+
+
+
+
 
 <footer>
     <div class="footer-links">
-
         <div class="about-section">
             <h2>About</h2>
-            <p>
-           George Pitsillis is a Multimedia & Graphic Designer based in Limassol, creating custom graphic design solutions for Print and Digital platforms. You can contact me by Mobile or Email.
-            </p>
+            <p>George Pitsillis is a Multimedia & Graphic Designer based in Limassol, known for combining creativity with problem-solving to craft clear, engaging visual experiences. His work focuses on storytelling through design, always aiming to communicate ideas effectively and memorably.</p>
         </div>
 
         <div class="brandingf">
@@ -90,19 +125,16 @@ setInterval(nextSlide, 4000);
 
         <div class="bottom-section">
             <div class="contact-links">
-                <a href="mailto:giopit54ff@gmail.com">giopit54ff@gmail</a>
-                <a href="tel:+35797655441">+357 97655441</a>
-                <a href="https://www.behance.net" target="_blank">Behance</a>
-                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-                <a href="https://www.instagram.com/george.pitsillis/" target="_blank">Instagram</a>
-
+                <a href="mailto:giopit54ff@gmail.com" class="gmail-link">giopit54ff@gmail.com</a>
+                <a href="tel:+35797655441" class="phone-link">+357 97 655441</a>
+                <a href="https://www.linkedin.com/in/giorgos-pitsillis-b92297380" target="_blank" class="linkedin-btn">LinkedIn</a>
+                <a href="https://www.behance.net/giorgospit" target="_blank" rel="noopener noreferrer">Behance</a>
             </div>
-
-            <p>&copy; 2025 George Pitsillis</p>
+            <p class="fCopy">&copy; 2025 George Pitsillis. All rights reserved.</p>
         </div>
-
     </div>
 </footer>
 
 </body>
 </html>
+  s stelnw afto kai tha ithela na to kaneis opws itan to allo apo thema stihiwn fotografies links 
