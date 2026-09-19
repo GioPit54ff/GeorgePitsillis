@@ -209,7 +209,7 @@ nav ul li a:hover {
  
  
 /* ========================= 
-   FOOTER (Στυλ Διάταξης Pentagram - Laptop Εκδοχή)
+   FOOTER (Original Styles)
 ========================= */ 
  
 footer { 
@@ -265,48 +265,26 @@ footer {
 } 
  
 /* ========================= 
-   MOBILE STRUCTURE ONLY (max-width: 768px)
+   MOBILE STRUCTURE OVERRIDE (Μόνο αλλαγή θέσης)
 ========================= */ 
 @media (max-width: 768px) { 
-    footer { 
-        padding: 60px 24px 30px 24px; 
-    } 
- 
     .footer-links { 
-        gap: 40px; /* Μεγαλύτερα κενά μεταξύ των blocks όπως η Pentagram */ 
+        display: flex; 
+        flex-direction: column; 
     } 
  
-    .about-section h2 { 
-        font-size: 0.9rem; 
-        text-transform: uppercase; 
-        letter-spacing: 1px; 
-        margin-bottom: 15px; 
-        color: #888; /* Διακριτικός τίτλος ενότητας */ 
+    /* 1. Το About section μπαίνει πρώτο */ 
+    .about-section { 
+        order: 1; 
     } 
  
-    .about-section p { 
-        font-size: 1.1rem; 
-        line-height: 1.5; 
+    /* 2. Το George Pitsillis (Branding) μπαίνει δεύτερο */ 
+    .brandingf { 
+        order: 2; 
     } 
  
-    .brandingf h1 { 
-        font-size: 3.2rem; /* Πολύ μεγάλο όνομα στο mobile */ 
-        letter-spacing: -1px; 
-        line-height: 1; 
-        margin: 15px 0; 
-    } 
- 
+    /* 3. Τα Links και το Copyright μπαίνουν τελευταία */ 
     .bottom-section { 
-        gap: 30px; 
-    } 
- 
-    .contact-links { 
-        gap: 15px 25px; /* Καθαρή οριζόντια στοίχιση των links σε mobile σειρά */ 
-    } 
- 
-    .fCopy { 
-        border-top: 1px solid #ddd; 
-        padding-top: 20px; 
-        margin-top: 10px; 
+        order: 3; 
     } 
 }
