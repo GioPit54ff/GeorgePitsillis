@@ -151,6 +151,7 @@ nav ul li a:hover {
     opacity: 1; 
 } 
  
+ 
 .slide img { 
     width: 100%; 
     height: 100%; 
@@ -212,29 +213,4 @@ footer {
 .fCopy { 
     font-size: 0.9rem; 
     color: #888; 
-}
-
-/* ===================================================
-   MOBILE STRUCTURE OVERRIDE (Μόνο αλλαγή θέσης)
-=================================================== */ 
-@media (max-width: 768px) { 
-    .footer-links { 
-        display: flex; 
-        flex-direction: column; 
-    } 
- 
-    /* 1. Το About section μπαίνει πρώτο */ 
-    .about-section { 
-        order: 1; 
-    } 
- 
-    /* 2. Το George Pitsillis (Branding) μπαίνει δεύτερο */ 
-    .brandingf { 
-        order: 2; 
-    } 
- 
-    /* 3. Τα Links και το Copyright μπαίνουν τελευταία */ 
-    .bottom-section { 
-        order: 3; 
-    } 
 }
