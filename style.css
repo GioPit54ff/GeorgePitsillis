@@ -388,6 +388,7 @@ footer {
         width: 100%;
         margin: 0;
         padding: 0;
+        text-align: left;
     }
 
     .about-section {
@@ -398,13 +399,13 @@ footer {
         align-items: center;
         gap: 5px;
         margin-bottom: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .about-section h2 {
         min-width: 100px;
         margin-left: 0;
-        text-align: center;
+        text-align: left;
     }
 
     .about-section p {
@@ -412,7 +413,7 @@ footer {
         max-width: 700px;
         margin-left: 0;
         font-size: 0.9rem;
-        text-align: center;
+        text-align: left;
     }
 
     .brandingf h1 {
@@ -425,17 +426,17 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: left;
+        justify-content: left;
         gap: 10px;
         margin-bottom: 8px;
-        text-align: center;
+        text-align: left;
     }
 
     .contact-links a {
         width: 100%;
         margin: 0;
-        text-align: center;
+        text-align: left;
     }
 
     .bottom-section {
