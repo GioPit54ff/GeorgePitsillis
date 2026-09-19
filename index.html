@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,11 @@
 
 
     <!-- Hamburger button -->
-    <button class="hamburger" id="hamburger" aria-label="Open menu">
+
+    <button class="hamburger"
+            id="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false">
 
         <span></span>
         <span></span>
@@ -39,9 +44,24 @@
     </button>
 
 
+    <!-- Navigation -->
+
     <nav>
 
         <ul id="nav-links">
+
+            <!-- CV FIRST -->
+
+            <li>
+                <a href="CVGeorgePitsillis.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    CV
+                </a>
+            </li>
+
+
+            <!-- PROJECTS SECOND -->
 
             <li>
                 <a href="PortfolioGeorgePitsillis.pdf"
@@ -119,10 +139,16 @@
 
         navLinks.classList.toggle("active");
 
+        const isOpen = hamburger.classList.contains("active");
+
+        hamburger.setAttribute("aria-expanded", isOpen);
+
     });
 
 
-    /* Close menu when clicking a link */
+    /* =========================
+       CLOSE MENU AFTER CLICK
+    ========================= */
 
     navLinks.querySelectorAll("a").forEach(link => {
 
@@ -131,6 +157,8 @@
             hamburger.classList.remove("active");
 
             navLinks.classList.remove("active");
+
+            hamburger.setAttribute("aria-expanded", "false");
 
         });
 
@@ -167,11 +195,13 @@
 
             <div class="contact-links">
 
-                <a href="mailto:giopit54ff@gmail.com" class="gmail-link">
+                <a href="mailto:giopit54ff@gmail.com"
+                   class="gmail-link">
                     giopit54ff@gmail.com
                 </a>
 
-                <a href="tel:+35797655441" class="phone-link">
+                <a href="tel:+35797655441"
+                   class="phone-link">
                     +357 97 655441
                 </a>
 
@@ -190,13 +220,8 @@
                     Instagram
                 </a>
 
-                <a href="CVGeorgePitsillis.pdf"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    CV
-                </a>
-
             </div>
+
 
             <p class="fCopy">
                 &copy; 2025 George Pitsillis. All rights reserved.
@@ -210,3 +235,4 @@
 
 </body>
 </html>
+```
