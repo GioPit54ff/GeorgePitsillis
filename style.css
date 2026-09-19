@@ -1,4 +1,4 @@
-
+```css
 /* =========================
    GENERAL
 ========================= */
@@ -449,8 +449,6 @@ footer {
     }
 
 
-    /* Logo stays left */
-
     .logo-branding {
         width: auto;
 
@@ -535,8 +533,6 @@ footer {
     }
 
 
-    /* Open menu */
-
     nav ul.active {
         right: 0;
     }
@@ -583,7 +579,6 @@ footer {
         height: 300px;
     }
 
-
     .slide img {
         object-position: center;
     }
@@ -611,7 +606,9 @@ footer {
     }
 
 
-    /* About */
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about-section {
         width: 100%;
@@ -654,18 +651,19 @@ footer {
     }
 
 
-    /* Footer name */
+    /* =========================
+       HIDE LARGE FOOTER NAME
+       ON MOBILE
+    ========================= */
 
-    .brandingf h1 {
-        font-size: 3.2rem;
-
-        text-align: center;
-
-        margin: 20px auto;
+    .brandingf {
+        display: none;
     }
 
 
-    /* Contact information */
+    /* =========================
+       CONTACT INFORMATION
+    ========================= */
 
     .contact-links {
         width: 100%;
@@ -695,7 +693,9 @@ footer {
     }
 
 
-    /* Bottom section */
+    /* =========================
+       BOTTOM SECTION
+    ========================= */
 
     .bottom-section {
         width: 100%;
@@ -723,7 +723,9 @@ footer {
     }
 
 
-    /* Caption */
+    /* =========================
+       CAPTION
+    ========================= */
 
     .caption {
         left: 50%;
@@ -775,4 +777,4 @@ footer {
         font-size: 3rem;
     }
 }
-
+```
