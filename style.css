@@ -255,7 +255,7 @@ footer {
 
     .brandingf h1 {
         font-size: 5rem;
-        text-align: left;
+        text-align: center;
     }
 
     .bottom-section {
@@ -399,7 +399,7 @@ footer {
         align-items: center;
         gap: 5px;
         margin-bottom: 20px;
-        text-align: left;
+        text-align: center;
     }
 
     .about-section h2 {
