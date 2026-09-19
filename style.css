@@ -209,15 +209,14 @@ nav ul li a:hover {
  
  
 /* ========================= 
-   FOOTER (Pentagram Style)
+   FOOTER (Στυλ Διάταξης Pentagram - Laptop Εκδοχή)
 ========================= */ 
  
 footer { 
-    background-color: #000000; /* Απόλυτο μαύρο φόντο */ 
-    color: #ffffff; /* Λευκά γράμματα */ 
-    padding: 60px 24px 30px 24px; 
-    font-family: 'Roboto', sans-serif; 
-    border-top: 1px solid #1a1a1a; 
+    background-color: #fff; 
+    color: #408D3C; 
+    padding: 40px 30px; 
+    border-top: 1px solid #ddd; 
 } 
  
 .footer-links { 
@@ -225,80 +224,89 @@ footer {
     margin: 0 auto; 
     display: flex; 
     flex-direction: column; 
-    gap: 40px; 
-} 
- 
-/* About Section */ 
-.about-section { 
-    max-width: 650px; 
+    gap: 30px; 
 } 
  
 .about-section h2 { 
     font-family: 'Montserrat', sans-serif; 
-    font-size: 0.9rem; 
-    font-weight: 400; 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    margin-bottom: 20px; 
-    color: #888888; /* Γκρι τίτλος όπως το 'About' της Pentagram */ 
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
 } 
  
-.about-section p { 
-    font-size: 1.15rem; 
-    line-height: 1.5; 
-    font-weight: 400; 
-    color: #ffffff; 
-} 
- 
-/* Branding / Huge Logo Text */ 
 .brandingf h1 { 
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700; 
-    font-size: 3.5rem; /* Μεγάλα bold γράμματα */ 
-    letter-spacing: -2px; 
-    line-height: 1; 
-    margin: 20px 0; 
-    color: #ffffff; 
+    font-size: 2rem; 
 } 
  
-/* Bottom Section Links & Copy */ 
 .bottom-section { 
     display: flex; 
     flex-direction: column; 
-    gap: 30px; 
+    gap: 20px; 
 } 
  
 .contact-links { 
     display: flex; 
     flex-wrap: wrap; 
-    gap: 15px 25px; /* Οριζόντια στοίχιση με αποστάσεις */ 
+    gap: 20px; 
 } 
  
 .contact-links a { 
-    color: #ffffff; 
-    font-size: 1rem; 
-    font-weight: 400; 
-    transition: color 0.2s ease; 
-    text-decoration: none; 
-    cursor: pointer; 
+    color: #408D3C; 
 } 
  
 .contact-links a:hover { 
-    color: #888888; 
+    color: #888; 
 } 
  
-/* Copyright Section */ 
 .fCopy { 
     font-size: 0.9rem; 
-    color: #555555; 
-    margin-top: 10px; 
-    border-top: 1px solid #1a1a1a; 
-    padding-top: 20px; 
+    color: #888; 
 } 
  
-/* Desktop Adjustments για το Footer */ 
-@media (min-width: 768px) { 
+/* ========================= 
+   MOBILE STRUCTURE ONLY (max-width: 768px)
+========================= */ 
+@media (max-width: 768px) { 
+    footer { 
+        padding: 60px 24px 30px 24px; 
+    } 
+ 
+    .footer-links { 
+        gap: 40px; /* Μεγαλύτερα κενά μεταξύ των blocks όπως η Pentagram */ 
+    } 
+ 
+    .about-section h2 { 
+        font-size: 0.9rem; 
+        text-transform: uppercase; 
+        letter-spacing: 1px; 
+        margin-bottom: 15px; 
+        color: #888; /* Διακριτικός τίτλος ενότητας */ 
+    } 
+ 
+    .about-section p { 
+        font-size: 1.1rem; 
+        line-height: 1.5; 
+    } 
+ 
     .brandingf h1 { 
-        font-size: 5rem; /* Ακόμα πιο επιβλητικό μέγεθος σε μεγάλες οθόνες */ 
+        font-size: 3.2rem; /* Πολύ μεγάλο όνομα στο mobile */ 
+        letter-spacing: -1px; 
+        line-height: 1; 
+        margin: 15px 0; 
+    } 
+ 
+    .bottom-section { 
+        gap: 30px; 
+    } 
+ 
+    .contact-links { 
+        gap: 15px 25px; /* Καθαρή οριζόντια στοίχιση των links σε mobile σειρά */ 
+    } 
+ 
+    .fCopy { 
+        border-top: 1px solid #ddd; 
+        padding-top: 20px; 
+        margin-top: 10px; 
     } 
 }
