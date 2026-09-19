@@ -1,23 +1,24 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>George Pitsillis</title>
 
     <link
-        href="https://googleapis.com"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet"
-    />
+    >
 
     <link
         rel="icon"
         href="Logo.svg"
         type="image/svg+xml"
-    />
+    >
 
     <link
         rel="stylesheet"
@@ -26,9 +27,7 @@
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -38,7 +37,7 @@
             src="Logo.svg"
             alt="Logo"
             class="logo"
-        />
+        >
 
         <div class="branding">
 
@@ -78,13 +77,7 @@
 
         <ul id="nav-links">
 
-      
-
-
-            <!-- PROJECTS SECOND -->
-
             <li>
-
                 <a
                     href="PortfolioGeorgePitsillis.pdf"
                     target="_blank"
@@ -92,13 +85,9 @@
                 >
                     Projects
                 </a>
-
             </li>
 
-                  <!-- CV  -->
-
             <li>
-
                 <a
                     href="CVGeorgePitsillis.pdf"
                     target="_blank"
@@ -106,7 +95,6 @@
                 >
                     CV
                 </a>
-
             </li>
 
         </ul>
@@ -116,13 +104,11 @@
 </header>
 
 
-
 <!-- =========================
      BANNER SLIDER
 ========================= -->
 
 <section class="banner-slider">
-
 
     <div class="slide active">
 
@@ -153,9 +139,7 @@
 
     </div>
 
-
 </section>
-
 
 
 <script>
@@ -166,11 +150,9 @@
 
     let currentIndex = 0;
 
-    const slides =
-        document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.slide');
 
-    const totalSlides =
-        slides.length;
+    const totalSlides = slides.length;
 
 
     function showSlide(index) {
@@ -181,8 +163,7 @@
 
         });
 
-        slides[index]
-            .classList.add('active');
+        slides[index].classList.add('active');
 
     }
 
@@ -198,7 +179,6 @@
 
 
     setInterval(nextSlide, 4000);
-
 
 
     /* =========================
@@ -234,7 +214,6 @@
     );
 
 
-
     /* =========================
        CLOSE MENU WHEN LINK CLICKED
     ========================= */
@@ -247,13 +226,9 @@
                 "click",
                 function () {
 
-                    hamburger.classList.remove(
-                        "active"
-                    );
+                    hamburger.classList.remove("active");
 
-                    navLinks.classList.remove(
-                        "active"
-                    );
+                    navLinks.classList.remove("active");
 
                     hamburger.setAttribute(
                         "aria-expanded",
@@ -268,13 +243,11 @@
 </script>
 
 
-
 <!-- =========================
      FOOTER
 ========================= -->
 
 <footer>
-
 
     <div class="footer-links">
 
@@ -294,7 +267,6 @@
         </div>
 
 
-
         <div class="brandingf">
 
             <h1>
@@ -304,12 +276,9 @@
         </div>
 
 
-
         <div class="bottom-section">
 
-
             <div class="contact-links">
-
 
                 <a
                     href="mailto:giopit54ff@gmail.com"
@@ -318,7 +287,6 @@
                     giopit54ff@gmail.com
                 </a>
 
-
                 <a
                     href="tel:+35797655441"
                     class="phone-link"
@@ -326,51 +294,45 @@
                     +357 97 655441
                 </a>
 
-
                 <a
-                    href="https://behance.net"
+                    href="https://www.behance.net/georgepitsillis"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Behance
                 </a>
 
-
                 <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/giorgos-pitsillis-b92297380"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     LinkedIn
                 </a>
 
-
                 <a
-                    href="https://instagram.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                > 
-                    Instagram 
-                </a> 
- 
- 
-            </div> 
- 
- 
-            <p class="fCopy"> 
-                &copy; 2025 George Pitsillis. 
-                All rights reserved. 
-            </p> 
- 
- 
-        </div> 
- 
- 
-    </div> 
- 
- 
-</footer> 
- 
- 
-</body> 
+                    href="https://www.instagram.com/george.pitsillis/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram
+                </a>
+
+            </div>
+
+
+            <p class="fCopy">
+                &copy; 2025 George Pitsillis.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
 </html>
+```
