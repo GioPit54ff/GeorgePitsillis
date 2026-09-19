@@ -650,7 +650,8 @@ footer {
 
 
     /* =========================
-       HIDE BIG NAME ON MOBILE
+       BIG NAME
+       HIDDEN ONLY ON MOBILE
     ========================= */
 
     .brandingf {
@@ -659,7 +660,7 @@ footer {
 
 
     /* =========================
-       CONTACT LINKS
+       CONTACT INFORMATION
     ========================= */
 
     .contact-links {
