@@ -1,4 +1,4 @@
-
+```css
 /* =========================
    GENERAL
 ========================= */
@@ -426,8 +426,6 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* Prevent horizontal white space */
-
     html,
     body {
         width: 100%;
@@ -652,8 +650,7 @@ footer {
 
 
     /* =========================
-       HIDE LARGE FOOTER NAME
-       ON MOBILE
+       HIDE BIG NAME ON MOBILE
     ========================= */
 
     .brandingf {
@@ -662,7 +659,7 @@ footer {
 
 
     /* =========================
-       CONTACT INFORMATION
+       CONTACT LINKS
     ========================= */
 
     .contact-links {
@@ -777,4 +774,4 @@ footer {
         font-size: 3rem;
     }
 }
-
+```
