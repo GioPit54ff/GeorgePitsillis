@@ -255,7 +255,7 @@ footer {
 
     .brandingf h1 {
         font-size: 5rem;
-        text-align: center;
+        text-align: left;
     }
 
     .bottom-section {
@@ -388,7 +388,6 @@ footer {
         width: 100%;
         margin: 0;
         padding: 0;
-        text-align: center;
     }
 
     .about-section {
@@ -425,8 +424,8 @@ footer {
     .contact-links {
         width: 100%;
         display: flex;
-        flex-direction: center;
-        align-items: left;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         gap: 10px;
         margin-bottom: 8px;
@@ -443,7 +442,7 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: center;
         justify-content: center;
         gap: 10px;
         margin-top: 20px;
