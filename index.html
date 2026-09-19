@@ -1,338 +1,43 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>George Pitsillis</title>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        rel="icon"
-        href="Logo.svg"
-        type="image/svg+xml"
-    >
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
-</head>
-
-<body>
-
-<header>
-
-    <div class="logo-branding">
-
-        <img
-            src="Logo.svg"
-            alt="Logo"
-            class="logo"
-        >
-
-        <div class="branding">
-
-            <h1>
-                George Pitsillis
-            </h1>
-
-            <p class="tagline">
-                Graphic Design & Multimedia
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- HAMBURGER -->
-
-    <button
-        class="hamburger"
-        id="hamburger"
-        aria-label="Open menu"
-        aria-expanded="false"
-        type="button"
-    >
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-    </button>
-
-
-    <!-- NAVIGATION -->
-
-    <nav>
-
-        <ul id="nav-links">
-
-            <li>
-                <a
-                    href="PortfolioGeorgePitsillis.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Projects
-                </a>
-            </li>
-
-            <li>
-                <a
-                    href="CVGeorgePitsillis.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    CV
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-</header>
-
-
-<!-- =========================
-     BANNER SLIDER
-========================= -->
-
-<section class="banner-slider">
-
-    <div class="slide active">
-
-        <img
-            src="GP - Φωτογραφία2.jpg"
-            alt="Slide 1"
-        >
-
-    </div>
-
-
-    <div class="slide">
-
-        <img
-            src="1.png"
-            alt="Slide 2"
-        >
-
-    </div>
-
-
-    <div class="slide">
-
-        <img
-            src="Scene18.png"
-            alt="Slide 3"
-        >
-
-    </div>
-
-</section>
-
-
-<script>
-
-    /* =========================
-       SLIDER
-    ========================= */
-
-    let currentIndex = 0;
-
-    const slides = document.querySelectorAll('.slide');
-
-    const totalSlides = slides.length;
-
-
-    function showSlide(index) {
-
-        slides.forEach((slide) => {
-
-            slide.classList.remove('active');
-
-        });
-
-        slides[index].classList.add('active');
-
-    }
-
-
-    function nextSlide() {
-
-        currentIndex =
-            (currentIndex + 1) % totalSlides;
-
-        showSlide(currentIndex);
-
-    }
-
-
-    setInterval(nextSlide, 4000);
-
-
-    /* =========================
-       HAMBURGER MENU
-    ========================= */
-
-    const hamburger =
-        document.getElementById("hamburger");
-
-    const navLinks =
-        document.getElementById("nav-links");
-
-
-    hamburger.addEventListener(
-        "click",
-        function () {
-
-            hamburger.classList.toggle("active");
-
-            navLinks.classList.toggle("active");
-
-
-            const isOpen =
-                hamburger.classList.contains("active");
-
-
-            hamburger.setAttribute(
-                "aria-expanded",
-                isOpen
-            );
-
-        }
-    );
-
-
-    /* =========================
-       CLOSE MENU WHEN LINK CLICKED
-    ========================= */
-
-    navLinks
-        .querySelectorAll("a")
-        .forEach(link => {
-
-            link.addEventListener(
-                "click",
-                function () {
-
-                    hamburger.classList.remove("active");
-
-                    navLinks.classList.remove("active");
-
-                    hamburger.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
-                }
-            );
-
-        });
-
-</script>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
-
-    <div class="footer-links">
-
-
-        <div class="about-section">
-
-            <h2>
-                About
-            </h2>
-
-            <p>
-                George Pitsillis is a Multimedia & Graphic Designer
-                based in Limassol, specializing in Visual Communication
-                across print and digital media.
-            </p>
-
-        </div>
-
-
-        <div class="brandingf">
-
-            <h1>
-                George Pitsillis
-            </h1>
-
-        </div>
-
-
-        <div class="bottom-section">
-
-            <div class="contact-links">
-
-                <a
-                    href="mailto:giopit54ff@gmail.com"
-                    class="gmail-link"
-                >
-                    giopit54ff@gmail.com
-                </a>
-
-                <a
-                    href="tel:+35797655441"
-                    class="phone-link"
-                >
-                    +357 97 655441
-                </a>
-
-                <a
-                    href="https://www.behance.net/georgepitsillis"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Behance
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/giorgos-pitsillis-b92297380"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                <a
-                    href="https://www.instagram.com/george.pitsillis/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Instagram
-                </a>
-
+    <div class="footer-mobile-container">
+        
+        <!-- 1. Open Positions (Η διαθεσιμότητά σου στη δομή του Pentagram) -->
+        <div class="mobile-section-block">
+            <span class="mobile-section-title">Open Positions</span>
+            <div class="mobile-job-row">
+                <span class="mobile-job-link">Available for Freelance</span>
+                <span class="mobile-job-location">Cyprus</span>
             </div>
+            <a href="opens in a new tab or window giopit54ff.github.io/GeorgePitsillis/" class="mobile-view-all">See all open positions</a>
+        </div>
 
-
-            <p class="fCopy">
-                &copy; 2025 George Pitsillis.
-                All rights reserved.
+        <!-- 2. About Block (Το δικό σου κείμενο About) -->
+        <div class="mobile-section-block">
+            <span class="mobile-section-title">About</span>
+            <p class="mobile-about-text">
+                George Pitsillis is a Multimedia & Graphic Designer based in Limassol, specializing in Visual Communication across print and digital media.
             </p>
+        </div>
 
+        <!-- 3. Giant Branding Wordmark (Το όνομά σου στη θέση του logo) -->
+        <div class="mobile-branding-block">
+            <h1>George Pitsillis</h1>
+        </div>
+
+        <!-- 4. Social & Contact Links Grid (Μόνο τα δικά σου 5 links σε διάταξη Pentagram) -->
+        <div class="mobile-grid-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href="mailto:giopit54ff@gmail.com" class="gmail-link">Gmail</a>
+            <a href="tel:+35797655441" class="phone-link">Phone</a>
+        </div>
+
+        <!-- 5. Bottom Metadata Row (Το δικό σου Copyright) -->
+        <div class="mobile-meta-row">
+            <a href="#" class="mobile-privacy">Privacy Policy</a>
+            <span class="mobile-copyright">&copy; 2025 George Pitsillis. All rights reserved.</span>
         </div>
 
     </div>
-
 </footer>
-
-
-</body>
-</html>
-
