@@ -1,4 +1,3 @@
-```css
 /* =========================
    GENERAL
 ========================= */
@@ -7,12 +6,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}file:///C:/Users/giorg/Documents/ViberDownloads/0-02-05-52f370e46701732c1cfb4224078b1d9d01383d35f401ee0e68517743f6098f6a_eee663595c15aa5a.jpg
 
 html {
     scroll-behavior: smooth;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -20,12 +17,6 @@ body {
     background-color: #fff;
     color: #408D3C;
     line-height: 1.6;
-
-    width: 100%;
-    min-width: 0;
-
-    overflow-x: hidden;
-
     cursor: url('Cursor-Grey-24.svg') 0 0, auto;
 }
 
@@ -55,8 +46,6 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
-
     padding: 15px 30px;
 
     border-radius: 0 0 10px 10px;
@@ -74,20 +63,14 @@ header {
 .logo-branding {
     display: flex;
     align-items: center;
-
-    min-width: 0;
 }
 
 .logo {
     height: 60px;
-    width: auto;
-
-    flex-shrink: 0;
 }
 
 .branding {
     margin-left: 15px;
-    min-width: 0;
 }
 
 .branding h1 {
@@ -95,8 +78,6 @@ header {
     font-weight: 700;
     font-size: 1.6rem;
     color: #408D3C;
-
-    margin: 0;
 }
 
 .tagline {
@@ -104,8 +85,6 @@ header {
     font-weight: 500;
     font-size: 1rem;
     color: #888;
-
-    margin: 0;
 }
 
 
@@ -121,14 +100,6 @@ nav ul {
     align-items: center;
 
     gap: 25px;
-
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li a {
@@ -165,8 +136,6 @@ nav ul li a:hover {
     cursor: pointer;
 
     z-index: 1100;
-
-    flex-shrink: 0;
 }
 
 .hamburger span {
@@ -275,8 +244,6 @@ footer {
     border-top: 1px solid #ddd;
 
     color: #F4F4F4;
-
-    width: 100%;
 }
 
 .footer-links {
@@ -458,122 +425,54 @@ footer {
 
 @media (max-width: 768px) {
 
-    html,
-    body {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 0;
-        padding: 0;
-
-        overflow-x: hidden;
-    }
-
-
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
-        width: 100%;
-        max-width: 100%;
+        padding: 12px 15px;
 
         min-height: 70px;
-
-        padding: 10px 12px;
-
-        margin: 0;
-
-        border-radius: 0 0 10px 10px;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        overflow: hidden;
     }
 
 
-    /* =========================
-       LOGO + BRANDING
-    ========================= */
+    /* Logo stays left */
 
     .logo-branding {
-        display: flex;
+        width: auto;
 
-        align-items: center;
-
-        flex: 1;
-
-        min-width: 0;
-
-        overflow: hidden;
+        justify-content: flex-start;
     }
+
 
     .logo {
         height: 45px;
-        width: auto;
-
-        flex-shrink: 0;
     }
+
 
     .branding {
-        margin-left: 8px;
-
-        min-width: 0;
-
-        overflow: hidden;
+        margin-left: 10px;
     }
+
 
     .branding h1 {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
 
-        line-height: 1.1;
-
-        margin: 0;
-
-        white-space: nowrap;
+        text-align: left;
     }
+
 
     .tagline {
-        font-size: 0.78rem;
+        font-size: 0.85rem;
 
-        line-height: 1.1;
-
-        margin: 2px 0 0 0;
-
-        white-space: nowrap;
+        text-align: left;
     }
 
 
-    /* =========================
-       HAMBURGER
-    ========================= */
+    /* Show hamburger */
 
     .hamburger {
         display: block;
-
-        width: 42px;
-        height: 42px;
-
-        padding: 7px;
-
-        margin-left: 8px;
-
-        flex-shrink: 0;
-    }
-
-    .hamburger span {
-        width: 26px;
-        height: 2px;
-
-        margin: 5px auto;
     }
 
 
-    /* =========================
-       MOBILE NAV
-    ========================= */
+    /* Mobile menu */
 
     nav ul {
         position: fixed;
@@ -582,7 +481,6 @@ footer {
         right: -100%;
 
         width: 75%;
-        max-width: 320px;
 
         height: 100vh;
 
@@ -596,9 +494,10 @@ footer {
 
         align-items: center;
 
-        gap: 25px;
+        gap: 30px;
 
         padding: 0;
+
         margin: 0;
 
         transition: right 0.3s ease;
@@ -608,29 +507,29 @@ footer {
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.08);
     }
 
+
+    /* Open menu */
+
     nav ul.active {
         right: 0;
     }
 
+
     nav ul li {
         margin: 0;
-        padding: 0;
 
         text-align: center;
     }
 
-    nav ul li a {
-        display: block;
 
+    nav ul li a {
         font-size: 1.3rem;
 
         padding: 10px 20px;
     }
 
 
-    /* =========================
-       HAMBURGER → X
-    ========================= */
+    /* Hamburger becomes X */
 
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -645,219 +544,53 @@ footer {
     }
 
 
-    /* =========================
-       SLIDER
-    ========================= */
+    /* Slider */
 
     .banner-slider {
         width: 100%;
-        max-width: 100%;
 
         height: 300px;
-
-        margin: 0;
-        padding: 0;
-
-        overflow: hidden;
     }
 
-    .slide {
-        width: 100%;
-        max-width: 100%;
-    }
 
     .slide img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-
         object-position: center;
-
-        display: block;
     }
 
 
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-        width: 100%;
-        max-width: 100%;
-
-        margin: 0;
-
-        padding: 20px 15px;
-
-        text-align: center;
-
-        overflow: hidden;
-    }
-
-    .footer-links {
-        width: 100%;
-
-        margin: 0;
-        padding: 0;
-    }
-
-
-    /* =========================
-       ABOUT
-    ========================= */
-
-    .about-section {
-        width: 100%;
-
-        margin: 0 0 20px 0;
-
-        padding: 0;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        justify-content: center;
-
-        gap: 5px;
-
-        text-align: center;
-    }
-
-    .about-section h2 {
-        min-width: 0;
-
-        margin: 0;
-
-        font-size: large;
-
-        font-weight: 100;
-
-        text-align: center;
-    }
+    /* Footer */
 
     .about-section p {
-        width: 100%;
-
-        max-width: 600px;
-
-        margin: 0;
-
-        padding: 0;
-
         font-size: 0.9rem;
-
-        text-align: center;
-    }
-
-
-    /* =========================
-       FOOTER NAME
-    ========================= */
-
-    .brandingf {
-        width: 100%;
-
-        margin: 0;
-        padding: 0;
     }
 
     .brandingf h1 {
-        width: 100%;
-
         font-size: 3.2rem;
 
-        line-height: 1.1;
-
         text-align: center;
 
-        margin: 20px 0;
-
-        padding: 0;
+        margin: 20px auto;
     }
-
-
-    /* =========================
-       CONTACT INFORMATION
-    ========================= */
 
     .contact-links {
-        width: 100%;
-
-        margin: 0;
-
-        padding: 0;
-
         display: flex;
 
         flex-direction: column;
-
-        align-items: center;
-
-        justify-content: center;
-
-        gap: 8px;
-
-        text-align: center;
-    }
-
-    .contact-links a {
-        display: block;
-
-        width: 100%;
-
-        margin: 0;
-        padding: 0;
-
-        text-align: center;
-
-        color: #B0B0B0;
-
-        font-weight: 100;
-    }
-
-
-    /* =========================
-       BOTTOM SECTION
-    ========================= */
-
-    .bottom-section {
-        width: 100%;
-
-        margin-top: 20px;
-
-        padding: 0;
-
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        justify-content: center;
 
         gap: 10px;
 
         text-align: center;
     }
 
-    .fCopy {
-        width: 100%;
-
-        margin: 0;
-
-        padding: 0;
+    .bottom-section {
+        flex-direction: column;
 
         text-align: center;
     }
 
-
-    /* =========================
-       CAPTION
-    ========================= */
+    .footer-links {
+        padding: 0 10px;
+    }
 
     .caption {
         left: 50%;
@@ -885,50 +618,21 @@ footer {
 
 @media (max-width: 480px) {
 
-    header {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .logo {
-        height: 42px;
-    }
-
-    .branding {
-        margin-left: 7px;
-    }
-
     .branding h1 {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .tagline {
-        font-size: 0.73rem;
-
-        margin-top: 1px;
+        font-size: 0.78rem;
     }
 
-    .hamburger {
-        width: 40px;
-        height: 40px;
+    .banner-text {
+        font-size: 1.1rem;
 
-        margin-left: 5px;
-    }
-
-    .hamburger span {
-        width: 25px;
-    }
-
-    .banner-slider {
-        height: 300px;
+        padding: 6px 12px;
     }
 
     .brandingf h1 {
         font-size: 3rem;
     }
-
-    .contact-links {
-        gap: 8px;
-    }
 }
-```
