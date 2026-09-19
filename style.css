@@ -119,26 +119,11 @@ nav ul li a:hover {
  
  
 /* ========================= 
-   HAMBURGER (Συμπληρωμένο για να μην σπάει η σελίδα)
+   HAMBURGER 
 ========================= */ 
  
-.hamburger { 
-    display: none; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    width: 30px; 
-    height: 21px; 
-    background: transparent; 
-    border: none; 
-    cursor: pointer; 
-}
-
-.hamburger span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #408D3C;
-    transition: 0.3s ease;
+.hamburger {
+    display: none;
 }
  
  
@@ -176,7 +161,7 @@ nav ul li a:hover {
  
  
 /* ========================= 
-   FOOTER (Όπως ακριβώς το είχες στο Laptop)
+   FOOTER 
 ========================= */ 
  
 footer { 
@@ -229,41 +214,4 @@ footer {
 .fCopy { 
     font-size: 0.9rem; 
     color: #888; 
-}
-
-/* ===================================================
-   MOBILE STRACTURE ONLY (max-width: 768px)
-   Αλλάζει ΜΟΝΟ τη σειρά στο κινητό όπως η Pentagram
-=================================================== */ 
-@media (max-width: 768px) { 
-    /* Ενεργοποιούμε το κουμπί hamburger στο header */
-    .hamburger {
-        display: flex;
-    }
-    
-    /* Κρύβουμε το κλασικό μενού πλοήγησης στο mobile */
-    nav ul {
-        display: none;
-    }
-
-    /* Αλλαγή σειράς στο Footer (Structure Pentagram) */
-    .footer-links { 
-        display: flex !important; 
-        flex-direction: column !important; 
-    } 
- 
-    /* 1. Πάνω-πάνω το About */ 
-    .about-section { 
-        order: 1 !important; 
-    } 
- 
-    /* 2. Στη μέση το Όνομα (George Pitsillis) */ 
-    .brandingf { 
-        order: 2 !important; 
-    } 
- 
-    /* 3. Κάτω-κάτω τα Social Links & Copyright */ 
-    .bottom-section { 
-        order: 3 !important; 
-    } 
 }
