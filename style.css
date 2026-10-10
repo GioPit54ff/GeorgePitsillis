@@ -1,4 +1,6 @@
-
+/* ==========================================================================
+   ΓΕΝΙΚΑ ΣΤΥΛ & RESET
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +30,9 @@ a:hover, a:active {
     text-decoration: none;
 }
 
+/* ==========================================================================
+   HEADER & NAVIGATION
+   ========================================================================== */
 header {
     position: sticky;
     top: 0;
@@ -107,6 +112,9 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
+/* ==========================================================================
+   BANNER SLIDER
+   ========================================================================== */
 .banner-slider {
     position: relative;
     width: 100%;
@@ -150,6 +158,89 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+/* ==========================================================================
+   SERVICES SECTION (Απλωμένο με Flexbox)
+   ========================================================================== */
+.services {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 100%;
+}
+
+.services-heading {
+    margin-bottom: 50px;
+}
+
+.services-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+.services-heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #408D3C;
+    margin-top: 5px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Όλες οι κάρτες έχουν το ίδιο ύψος */
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.service-card {
+    flex: 1; /* Ισομερές άπλωμα καρτών */
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(64, 141, 60, 0.1);
+    border-color: #408D3C;
+}
+
+.service-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Έντονο Montserrat */
+    font-size: 2.5rem;
+    color: rgba(64, 141, 60, 0.35); /* Πιο καθαρό στην οθόνη */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #408D3C;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 footer {
     background-color: #408D3C;
     margin-top: -2px;
@@ -220,6 +311,9 @@ footer {
     margin: auto 10px;
 }
 
+/* ==========================================================================
+   SCROLLBAR
+   ========================================================================== */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -240,6 +334,9 @@ footer {
     cursor: url('Cursor-Green-24.svg') 0 0, auto;
 }
 
+/* ==========================================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================================================== */
 @media (max-width: 1024px) {
     .branding h1 {
         font-size: 1.4rem;
@@ -279,6 +376,25 @@ footer {
         text-align: center;
         width: 80%;
         max-width: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-grid {
+        flex-direction: column;
+    }
+    
+    .services {
+        padding: 40px 20px;
+    }
+    
+    .services-heading h2 {
+        font-size: 2rem;
+    }
+    
+    .service-card {
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -397,197 +513,3 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .about-section h2 {
-        min-width: 100px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .about-section p {
-        width: 100%;
-        max-width: 700px;
-        margin-left: 0;
-        font-size: 0.9rem;
-        text-align: center;
-    }
-
-    .brandingf h1 {
-        font-size: 3.2rem;
-        text-align: center;
-        margin: 20px auto;
-    }
-
-    .contact-links {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 8px;
-        text-align: center;
-    }
-
-    .contact-links a {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
-    .bottom-section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .fCopy {
-        width: 100%;
-        text-align: center;
-    }
-
-    .caption {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 20px;
-        font-size: 1rem;
-        padding: 8px 12px;
-        width: 90%;
-        max-width: 280px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .branding h1 {
-        font-size: 1rem;
-        line-height: 1.1;
-    }
-
-    .tagline {
-        font-size: 0.78rem;
-        line-height: 1.1;
-        margin-top: 2px;
-    }
-
-    .banner-text {
-        font-size: 1.1rem;
-        padding: 6px 12px;
-    }
-
-    .brandingf h1 {
-        font-size: 3rem;
-    }
-}
-
-
-
-/* =========================
-   SERVICES SECTION
-========================= */
-
-.services {
-    padding: 80px 8%;
-    background: #F4F4F4;
-    color: #222;
-}
-
-.services-heading {
-    margin-bottom: 40px;
-}
-
-.services-label {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    letter-spacing: 3px;
-    color: #408D3C;
-    margin-bottom: 12px;
-}
-
-.services-heading h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-}
-
-.service-card {
-    padding: 30px 24px;
-    border: 1px solid #DADADA;
-    background: #FFFFFF;
-    transition: border-color 0.3s ease,
-                transform 0.3s ease;
-}
-
-.service-card:hover {
-    border-color: #408D3C;
-    transform: translateY(-4px);
-}
-
-.service-number {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #408D3C;
-    margin-bottom: 30px;
-}
-
-.service-card h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-    margin-bottom: 14px;
-}
-
-.service-card p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 1.8;
-    color: #666;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-    .services {
-        padding: 55px 6%;
-    }
-
-    .services-heading {
-        margin-bottom: 28px;
-    }
-
-    .services-heading h2 {
-        font-size: 29px;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .service-card {
-        padding: 24px 20px;
-    }
-
-    .service-number {
-        margin-bottom: 20px;
-    }
-
-}
-
-
